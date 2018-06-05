@@ -11,6 +11,7 @@ A simple clone of Google Cloud Photos built with react for the web
   
 4) Next go to databse right below the authentication option, create a real time database
 5) Under the rules tab enter this in
+
   <code>
     {
       "rules": {
