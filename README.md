@@ -37,10 +37,11 @@ Install Node: https://nodejs.org/en/
 
 Open a terminal in the directory and run these two commands
 
+- Run this to install required node modules
   <code>
     npm install
   </code>
-  
+- Run this to start the project
   <code>
     npm start
   </code>
