@@ -93,7 +93,7 @@ class Home extends Component {
 
             async function complete() {
             var link = await storageRef.getDownloadURL();
-            axios.post('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAtKVJCCPmLP9p-voX2oxyXHq83fIwGwKw', {
+            axios.post('https://vision.googleapis.com/v1/images:annotate?key=API_KEY', {
                 requests:[{
                     image:{
                         source:{
