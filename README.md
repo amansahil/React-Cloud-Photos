@@ -27,6 +27,10 @@ A simple clone of Google Cloud Photos built with react for the web
 
 6) Next go to databse right below the Storage option and click on get started
 
+7) Click on project overview above authentication and select "Add Firebase to your web app". Copy only the config variable
+
+8) Copy it into the src/index.js and replace it with the exisiting config var
+
 ## Running the project
 
 Install Node: https://nodejs.org/en/
