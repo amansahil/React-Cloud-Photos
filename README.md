@@ -46,13 +46,13 @@ For more info check out - https://firebase.google.com/docs/web/setup
 
 <img width="1440" alt="Enable Services and API" src="https://user-images.githubusercontent.com/33552991/41005639-6eed9cf2-692f-11e8-992e-290b9c4f2777.png">
 
-4) Search for Google Cloud Vision API and enable
+4) Search for Google Cloud Vision API and enable it
 
 <img width="1440" alt="Google Cloud Vision API" src="https://user-images.githubusercontent.com/33552991/41005691-9f1c4810-692f-11e8-9846-a18e3d49e1f0.png">
 
 5) Go back and go to credentials
 
-<img width="1440" alt="Credentiald" src="https://user-images.githubusercontent.com/33552991/41005808-049634c6-6930-11e8-840e-61bf37879821.png">
+<img width="1440" alt="Credentials" src="https://user-images.githubusercontent.com/33552991/41006042-f4c76a64-6930-11e8-9e0c-3ad88956c80e.png">
 
 6) Click on create credentials and click on API key
 
