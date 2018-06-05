@@ -60,6 +60,8 @@ For more info check out - https://firebase.google.com/docs/web/setup
 
 7) Replace the generated API key it for the API_KEY placeholder in src/components/Home.js on line 96
 
+For more info check out - https://cloud.google.com/vision/
+
 ## Running the project
 
 Install Node: https://nodejs.org/en/
