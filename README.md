@@ -60,7 +60,7 @@ For more info check out - https://firebase.google.com/docs/web/setup
 
 <img width="420" alt="screen shot 2018-06-06 at 2 21 04 am" src="https://user-images.githubusercontent.com/33552991/41005875-4d175180-6930-11e8-8aae-969e90f00b12.png">
 
-7) Replace the generated API key it for the API_KEY placeholder in src/components/Home.js on line 96
+7) Replace the generated API key for the API_KEY placeholder in src/components/Home.js on line 96
 
 For more info check out - https://cloud.google.com/vision/
 
