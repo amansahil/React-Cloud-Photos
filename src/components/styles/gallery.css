@@ -1,0 +1,34 @@
+body {
+	padding-top: 60px;
+}
+.navbar-inverse {
+	background: #2c3e50;	
+}
+.row .flexRow {
+	display:flex;
+	flex-wrap: wrap;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+.thumbnail img {
+    width: 100%;
+    
+}
+.thumbnail {
+    padding: 0;
+}
+.thumbnail .caption-full{
+    padding: 9px;
+}
+span {
+	opacity: 0;
+	display: none;
+}
+.thumbnail:hover span{
+	opacity: 1.0;
+	display: block;
+}
