@@ -31,7 +31,7 @@ A simple clone of Google Cloud Photos built with react for the web
 
 Install Node: https://nodejs.org/en/
 
-Open a terminal in the directory run these two commands
+Open a terminal in the directory and run these two commands
 
   <code>
     npm install
