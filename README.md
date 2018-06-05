@@ -8,8 +8,8 @@ A simple clone of Google Cloud Photos built with react for the web
 2) Go to the console and start a new project
 
 3) Go to authentication from the menu on the left and enable email under sign up methods
-  
-  <img width="1439" alt="firebase auth" src="https://user-images.githubusercontent.com/33552991/41003230-48f2bfee-6927-11e8-8ed8-3d2ae85318c2.png">
+
+<img width="1439" alt="firebase auth" src="https://user-images.githubusercontent.com/33552991/41003230-48f2bfee-6927-11e8-8ed8-3d2ae85318c2.png">
   
 4) Next go to databse right below the authentication option, create a real time database
 
