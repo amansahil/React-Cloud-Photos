@@ -40,7 +40,7 @@ For more info check out - https://firebase.google.com/docs/web/setup
 
 1) Go to cloud.google.com and enter your console
 
-2) Create a new project and select API & Services 
+2) Create a new project and select API & Services from the sliding navigation
 
 3) Click on Enable Services and API
 
