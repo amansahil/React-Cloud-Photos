@@ -90,7 +90,7 @@ Open a terminal in the directory and run these two commands
 
 ## EXTRAS
 
-Check out non react version of the app and its Lighthouse score here - https://github.com/amansahil/Firebase-Cloud-Photos
+Check out the non react version of the app and its Lighthouse score here - https://github.com/amansahil/Firebase-Cloud-Photos
 
 <b>Lighthouse score</b>
 <img width="1440" alt="react" src="https://user-images.githubusercontent.com/33552991/41068148-4c7553c0-69f9-11e8-94c0-e8b2aad1cee8.png">
