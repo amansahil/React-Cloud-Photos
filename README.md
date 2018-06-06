@@ -15,15 +15,17 @@ A simple clone of Google Cloud Photos built with react for the web
 
 5) Under the rules tab enter this in
 
-    "rules": {
-     "users": {
-       "$uid":{
-         ".read" : "$uid === auth.uid",
-         ".write": "$uid === auth.uid"
-       }
-     }
-    }
-
+        {
+          "rules": {
+           "users": {
+             "$uid":{
+               ".read" : "$uid === auth.uid",
+               ".write": "$uid === auth.uid"
+             }
+           }
+          }
+        }
+        
 6) Next go to databse right below the Storage option and click on get started
 
 7) Click on project overview above authentication and select "Add Firebase to your web app". Copy only the config variable
