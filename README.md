@@ -76,3 +76,16 @@ Open a terminal in the directory and run these two commands
   <code>
     npm start
   </code>
+  
+## Screenshots
+
+<b>Login Screen</b>
+<img width="1440" alt="screen shot 2018-06-06 at 3 23 05 pm" src="https://user-images.githubusercontent.com/33552991/41067928-61749b24-69f8-11e8-9f8c-b71409685d17.png">
+
+<b>Home Screen (Initial)</b>
+<img width="1440" alt="screen shot 2018-06-06 at 3 26 20 pm" src="https://user-images.githubusercontent.com/33552991/41067977-a2d9b95a-69f8-11e8-9216-db115551549d.png">
+
+<b>Home Screen (After an upload of a picture)</b>
+<img width="1440" alt="screen shot 2018-06-06 at 3 25 04 pm" src="https://user-images.githubusercontent.com/33552991/41068025-cc7075f6-69f8-11e8-9f86-8d0f305ca666.png">
+
+
