@@ -88,4 +88,12 @@ Open a terminal in the directory and run these two commands
 <b>Home Screen (After an upload of a picture)</b>
 <img width="1440" alt="screen shot 2018-06-06 at 3 25 04 pm" src="https://user-images.githubusercontent.com/33552991/41068025-cc7075f6-69f8-11e8-9f86-8d0f305ca666.png">
 
+## EXTRAS
+
+Check out non react version of the app and its Lighthouse score here - https://github.com/amansahil/Firebase-Cloud-Photos
+
+<b>Lighthouse score</b>
+<img width="1440" alt="react" src="https://user-images.githubusercontent.com/33552991/41068148-4c7553c0-69f9-11e8-94c0-e8b2aad1cee8.png">
+
+
 
