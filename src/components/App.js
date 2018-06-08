@@ -40,8 +40,7 @@ class App extends Component {
     
     login() {
         
-        const email = this.state.email;
-        const password = this.state.password;
+        const { email, password } = this.state;
 	    firebase.auth().createUserWithEmailAndPassword(email, password).then(function (user){
 	        this.setState({ user })
 	    })

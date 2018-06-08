@@ -15,12 +15,14 @@ class Home extends Component {
                 display: 'none',
             },
             data: [],
-            key: []
+            key: [],
+            disabled: ''
         }
         
         this.logout = this.logout.bind(this);
         this.uploadPhoto = this.uploadPhoto.bind(this);
         this.delete = this.delete.bind(this);
+        this.buttonState = this.buttonState.bind(this);
     }
     
     componentDidMount(){
@@ -38,7 +40,20 @@ class Home extends Component {
               	         key: []     	                
       	            })
       	        }
-      	 });
+           });
+           
+           this.buttonState()
+    }
+
+    buttonState() {
+        var connectedRef = firebase.database().ref(".info/connected");
+        connectedRef.on("value", function(snap) {
+          if (snap.val() === true) {
+            this.setState({ disabled: '' })
+          } else {
+              this.setState({ disabled: "disabled" })
+          }
+        }.bind(this));
     }
     
 
@@ -93,7 +108,7 @@ class Home extends Component {
 
             async function complete() {
             var link = await storageRef.getDownloadURL();
-            axios.post('https://vision.googleapis.com/v1/images:annotate?key=API_KEY', {
+            axios.post('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAtKVJCCPmLP9p-voX2oxyXHq83fIwGwKw', {
                 requests:[{
                     image:{
                         source:{
@@ -108,20 +123,25 @@ class Home extends Component {
                     ]
             }]
             })
-            .then(function (response) {
+            .then((response) => {
                 var sugguestions = [];
                 for(var i=0; i<3; i++){
                     sugguestions.push(response.data.responses[0].labelAnnotations[i].description)
                 }
                 firebase.database().ref(`/users/${currentUser.uid}/files`).push({ link, loc, sugguestions });
-
+                document.getElementById("file").value = ""; 
+                this.setState({uploader: { display: 'none' }})             
             })
-            .catch(function (error) {
-                console.log(error);
+            .catch((error) => {
+                var sugguestions = [];
+                for(var i=0; i<3; i++){
+                    sugguestions.push('undefined')
+                }
+                firebase.database().ref(`/users/${currentUser.uid}/files`).push({ link, loc, sugguestions });
+                document.getElementById("file").value = "";  
+                this.setState({uploader: { display: 'none' }})  
             });
-
-                
-            }
+            }.bind(this)
         )
 
     }
@@ -153,7 +173,7 @@ class Home extends Component {
         	    <div className="jumbotron">
         		<h1><i className="fas fa-camera-retro"></i> Image Gallery</h1>
         		<p><progress value={this.state.progress} max="100" style={this.state.uploader}>{this.state.progress}%</progress></p>
-                <p><input type="file" onChange={this.uploadPhoto} className="btn btn-primary btn-lg" id="file" /></p>
+                <p><input type="file" onChange={this.uploadPhoto} className="btn btn-primary btn-lg" id="file" disabled={this.state.disabled}/></p>
                 </div>
                 <div className="row flexRow">
                     {this.state.data.map((data, i ) => <Photos data={data} key={i} keyProp={this.state.key[i]} delete={this.delete}/>)}
